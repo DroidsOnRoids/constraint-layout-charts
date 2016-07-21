@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Charts</string>
+    <string name="edit_text_number_hint">Value</string>
+    <string name="edit_text_label_hint">Label</string>
+    <string name="error_value">(0 – 100)</string>
+    <string name="error_invalid_values">Invalid values!</string>
+
+    <string name="label_100">100%</string>
+    <string name="label_80">80%</string>
+    <string name="label_60">60%</string>
+    <string name="label_40">40%</string>
+    <string name="label_20">20%</string>
+</resources>

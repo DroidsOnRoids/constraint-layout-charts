@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pl.droidsonroids.charts.ui.main.MainActivity"
+    android:id="@+id/constraint_layout"
+    android:background="@color/gray">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_chart_edit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/constraint_layout"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="@+id/constraint_layout"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/constraint_layout"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/constraint_layout"
+        tools:layout_constraintBottom_creator="1" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_charts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_equalizer_white_24dp"
+        app:useCompatPadding="true"
+        app:layout_constraintRight_toRightOf="@+id/recycler_chart_edit"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/recycler_chart_edit"
+        tools:layout_constraintBottom_creator="1" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_add_white_24dp"
+        app:useCompatPadding="true"
+        app:layout_constraintRight_toRightOf="@+id/recycler_chart_edit"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/fab_charts" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+
+    <dimen name="chart_bar_item_width">100dp</dimen>
+    <dimen name="chart_bar_item_header_width">70dp</dimen>
+    <dimen name="chart_bar_line_width">50dp</dimen>
+    <dimen name="chart_bar_line_height">1dp</dimen>
+
+    <dimen name="edit_text_width">100dp</dimen>
+    <dimen name="delete_icon_size">40dp</dimen>
+
+</resources>

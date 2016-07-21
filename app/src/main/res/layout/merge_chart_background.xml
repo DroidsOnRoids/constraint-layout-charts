@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_Percent="80"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <!-- Line 100% -->
+
+    <TextView
+        android:id="@+id/text_label_100"
+        style="@style/TextLabelPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_100"
+        app:layout_constraintRight_toLeftOf="@+id/guideline_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/view_horizontal_line_100"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/view_horizontal_line_100"
+        style="@style/LinePercent"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/chart_bar_line_height"
+        app:layout_constraintRight_toRightOf="@+id/constraint_layout"
+        app:layout_constraintTop_toTopOf="@+id/constraint_layout" />
+
+    <!-- Line 80% -->
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_80"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_Percent="20"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="102dp" />
+
+    <TextView
+        android:id="@+id/text_label_80"
+        style="@style/TextLabelPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_80"
+        app:layout_constraintRight_toLeftOf="@+id/guideline_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/view_horizontal_line_80"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/view_horizontal_line_80"
+        style="@style/LinePercent"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/chart_bar_line_height"
+        app:layout_constraintRight_toRightOf="@+id/constraint_layout"
+        app:layout_constraintTop_toTopOf="@+id/guideline_80" />
+
+    <!-- Line 60% -->
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_Percent="40"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="204dp" />
+
+    <TextView
+        android:id="@+id/text_label_60"
+        style="@style/TextLabelPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_60"
+        app:layout_constraintRight_toLeftOf="@+id/guideline_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/view_horizontal_line_60"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/view_horizontal_line_60"
+        style="@style/LinePercent"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/chart_bar_line_height"
+        app:layout_constraintRight_toRightOf="@+id/constraint_layout"
+        app:layout_constraintTop_toBottomOf="@+id/guideline_60" />
+
+    <!-- Line 40% -->
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_Percent="60"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="306dp" />
+
+    <TextView
+        android:id="@+id/text_label_40"
+        style="@style/TextLabelPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_40"
+        app:layout_constraintRight_toLeftOf="@+id/guideline_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/view_horizontal_line_40"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/view_horizontal_line_40"
+        style="@style/LinePercent"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/chart_bar_line_height"
+        app:layout_constraintRight_toRightOf="@+id/constraint_layout"
+        app:layout_constraintTop_toTopOf="@+id/guideline_40" />
+
+    <!-- Line 20% -->
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_Percent="80"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="408dp" />
+
+    <TextView
+        android:id="@+id/text_label_20"
+        style="@style/TextLabelPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_20"
+        app:layout_constraintRight_toLeftOf="@+id/guideline_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/view_horizontal_line_20"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/view_horizontal_line_20"
+        style="@style/LinePercent"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/chart_bar_line_height"
+        app:layout_constraintRight_toRightOf="@+id/constraint_layout"
+        app:layout_constraintTop_toTopOf="@+id/guideline_20" />
+
+    <!-- Line 0% -->
+
+    <View
+        android:id="@+id/view_horizontal_line_0"
+        style="@style/LinePercent"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/chart_bar_line_height"
+        app:layout_constraintBottom_toBottomOf="@id/constraint_layout"
+        app:layout_constraintLeft_toLeftOf="@+id/constraint_layout"
+        app:layout_constraintRight_toRightOf="@+id/constraint_layout" />
+
+</merge>

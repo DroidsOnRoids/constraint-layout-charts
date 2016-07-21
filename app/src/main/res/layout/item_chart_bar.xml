@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_layout"
+    android:layout_width="@dimen/chart_bar_item_width"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/merge_chart_background"/>
+
+    <View
+        android:id="@+id/view_chart_bar"
+        style="@style/ChartBar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/constraint_layout"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginStart="@dimen/margin_medium"
+        app:layout_constraintTop_toTopOf="@+id/guideline_top"
+        app:layout_constraintRight_toRightOf="@+id/constraint_layout"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginEnd="@dimen/margin_medium"
+        app:layout_constraintBottom_toBottomOf="@+id/constraint_layout" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="71dp" />
+
+    <TextView
+        style="@style/TextLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_label"
+        android:lines="1"
+        android:ellipsize="end"
+        app:layout_constraintLeft_toLeftOf="@+id/view_chart_bar"
+        app:layout_constraintRight_toRightOf="@+id/view_chart_bar"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_top"
+        android:layout_marginBottom="@dimen/margin_small" />
+
+</android.support.constraint.ConstraintLayout>
